@@ -1,0 +1,35 @@
+@import "../variables/variables.less";
+@import "../mixins/private/token-mixins.less";
+
+.inline-notice {
+    margin: @spacing-100 0;
+}
+
+div.inline-notice {
+    display: flex;
+}
+
+span.inline-notice {
+    display: inline-flex;
+}
+
+.inline-notice__header {
+    display: flex;
+    margin-right: @spacing-100;
+    margin-top: @spacing-50;
+}
+
+.inline-notice p {
+    margin: 3px 0;
+}
+
+.inline-notice a,
+.inline-notice button.fake-link {
+    .color-token(color-foreground-primary);
+}
+
+[dir="rtl"] {
+    .inline-notice__header .icon.icon--confirmation-filled-small {
+        margin-left: @spacing-100;
+    }
+}

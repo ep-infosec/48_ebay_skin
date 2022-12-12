@@ -1,0 +1,17 @@
+<div id="program-badge">
+    {% include section-header.html name="program-badge" version=page.versions.program-badge %}
+
+    <p>Each program badge is available as an SVG symbol.</p>
+
+
+    {% include icon-list.html icon=site.data.icons.program-badges skipName=true %}
+
+    <p>Below is the code example for how to use the "program-badge-authenticity-guaranteed" symbol. Please refer to the <a href="#icon">icon section</a> for full guidance on how to include and use SVG symbols.
+
+    {% highlight html %}
+<svg role="img" aria-label="Authenticity Guaranteed Program" class="program-badge program-badge--authenticity-guaranteed" focusable="false" height="24" width="24">
+    <use xlink:href="#program-badge-authenticity-guaranteed"></use>
+</svg>
+    {% endhighlight %}
+
+</div>

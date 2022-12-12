@@ -1,0 +1,24 @@
+.inline-notice {
+  margin: 8px 0;
+}
+div.inline-notice {
+  display: flex;
+}
+span.inline-notice {
+  display: inline-flex;
+}
+.inline-notice__header {
+  display: flex;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+.inline-notice p {
+  margin: 3px 0;
+}
+.inline-notice a,
+.inline-notice button.fake-link {
+  color: var(--color-foreground-primary);
+}
+[dir="rtl"] .inline-notice__header .icon.icon--confirmation-filled-small {
+  margin-left: 8px;
+}

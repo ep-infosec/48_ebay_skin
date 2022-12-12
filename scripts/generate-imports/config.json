@@ -1,0 +1,48 @@
+{
+    "modules": {
+        "core": ["global", "utility"],
+        "combo": ["core", "lightbox-dialog", "form", "progress-spinner"],
+        "form": ["button", "checkbox", "field", "radio", "select", "switch", "textbox"]
+    },
+    "skip": ["mixins", "legacy-tokens", "tokens", "svg", "icon-large", "variables"],
+    "skipIndex": [
+        "dark-mode",
+        "legacy-textbox",
+        "legacy-theme",
+        "legacy-tokens",
+        "rounded-off",
+        "square-corner-theme",
+        "variables"
+    ],
+    "dsVersions": ["6", "4"],
+    "defaultDS": "6",
+    "dsSkip": {
+        "4": ["marketsans", "form", "core"]
+    },
+    "overrideFile": {},
+    "addModules": {
+        "drawer-dialog": ["icon-button"],
+        "fullscreen-dialog": ["icon-button"],
+        "infotip": ["icon-button"],
+        "lightbox-dialog": ["icon-button"],
+        "listbox-button": ["expand-button"],
+        "menu-button": ["expand-button"],
+        "page-notice": ["button"],
+        "pagination": ["icon-button"],
+        "panel-dialog": ["icon-button"],
+        "section-notice": ["button"],
+        "split-button": ["button", "menu-button"],
+        "toast-dialog": ["icon-button"],
+        "tourtip": ["icon-button"]
+    },
+    "nested": {
+        "tokens": {
+            "index": ["evo-core", "evo-light"],
+            "tokens": ["tokens/evo-core", "tokens/evo-light"]
+        },
+        "legacy-tokens": {
+            "index": ["ds4-core", "ds4-light"],
+            "legacy-tokens": ["legacy-tokens/ds4-core", "legacy-tokens/ds4-light"]
+        }
+    }
+}

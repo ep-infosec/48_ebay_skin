@@ -1,0 +1,12 @@
+source: ./docs/
+exclude: [_babel, src, ds4.browser.json, ds6.browser.json]
+highlighter: rouge
+defaultFormatList: ["large-box", "medium-box", "small-box", "small-letter", "tick"]
+url: https://ebay.github.io/skin
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      cdn_path: https://ir.ebaystatic.com/cr/v/c1/skin
+      version: 15.2.2
